@@ -21,4 +21,9 @@ elif move == "s":
 else:
     sys.exit()
     
-    
+# Calculate and update the score board
+while True:
+    if move in choice:
+        print("It is a tie!")
+        ties += 1
+    sys.exit()
