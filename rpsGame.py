@@ -25,16 +25,16 @@ while True:
 # Calculate and update the score board
     if (move == "r" and choice == "ROCK") or (move == "p" and choice == "PAPER") or (move == "s" and choice == "SCISSORS"):
         print("It's  a tie!")
+        ties += 1
     elif move == "p" and choice == "ROCK": 
         print("You win!")
+        wins += 1
     elif move == "r" and choice == "SCISSORS":
         print("You win!")
+        wins += 1
     elif move == "s" and choice == "PAPER":
         print("You win!")
-    elif move == "r" and choice == "PAPER":
+        wins += 1
+    else:
         print("You lose")
-    elif move == "s" and choice == "ROCK":
-        print("You lose")
-    elif move == "p" and choice == "SCISSORS":
-        print("You lose")
-  
+        losses += 1
