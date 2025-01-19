@@ -26,15 +26,20 @@ while True:
     if (move == "r" and choice == "ROCK") or (move == "p" and choice == "PAPER") or (move == "s" and choice == "SCISSORS"):
         print("It's  a tie!")
         ties += 1
+        print(f"{int(wins)} Wins, {int(losses)} Losses, {int(ties)} Ties")
     elif move == "p" and choice == "ROCK": 
         print("You win!")
         wins += 1
+        print(f"{int(wins)} Wins, {int(losses)} Losses, {int(ties)} Ties")
     elif move == "r" and choice == "SCISSORS":
         print("You win!")
         wins += 1
+        print(f"{int(wins)} Wins, {int(losses)} Losses, {int(ties)} Ties")
     elif move == "s" and choice == "PAPER":
         print("You win!")
         wins += 1
+        print(f"{int(wins)} Wins, {int(losses)} Losses, {int(ties)} Ties")
     else:
         print("You lose")
         losses += 1
+        print(f"{int(wins)} Wins, {int(losses)} Losses, {int(ties)} Ties")
